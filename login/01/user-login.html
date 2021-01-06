@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”renderer” content=”webkit|ie-comp|ie-stand”/>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
 
     <title>登录</title>
     <link rel="short icon" href="imgs/logo.png">
@@ -20,63 +21,65 @@
 
 <body>
 
-<!-- 登录页面 -->
-<main>
+    <!-- 登录页面 -->
+    <main>
 
-    <!-- 左半部分 -->
-    <div class="left">
-        <div class="login-way">
-            <div class="active" id="userLogin">用户登录</div>
-            <div id="adminLogin">管理员登录</div>
-        </div>
-        <br>
+        <!-- 左半部分 -->
+        <div class="left">
+            <div class="login-way">
+                <div class="active" id="userLogin">用户登录</div>
+                <div id="adminLogin">管理员登录</div>
+            </div>
+            <br>
 
-        <!-- 用户登录表单 -->
-        <form id="userLoginForm" class="user">
-            <!--suppress HtmlFormInputWithoutLabel -->
-            <input id="teacherUsername" type="text" name="username" placeholder="工号" value="000000001"><br>
-            <!--suppress HtmlFormInputWithoutLabel -->
-            <input id="teacherPassword" type="password" name="password" placeholder="密码" value="000000"><br>
-            <div class="v-code">
+            <!-- 用户登录表单 -->
+            <form id="userLoginForm" class="user">
                 <!--suppress HtmlFormInputWithoutLabel -->
-                <input type="text" placeholder="验证码">
-                <img src="../imgs/code.jpg" alt=""></div>
-            <input type="submit" value="登录" class="submit">
-        </form>
-
-        <!-- 管理员登录表单 -->
-        <form id="adminLoginForm" class="admin">
-            <!--suppress HtmlFormInputWithoutLabel -->
-            <input id="adminUsername" type="text" name="username" placeholder="账号" value="wsgly"><br>
-            <!--suppress HtmlFormInputWithoutLabel -->
-            <input id="adminPassword" type="password" name="password" placeholder="密码" value="000000"><br>
-            <div class="v-code">
+                <input id="teacherUsername" type="text" name="username" placeholder="账号" value=""><br>
                 <!--suppress HtmlFormInputWithoutLabel -->
-                <input type="text" placeholder="验证码">
-                <img src="../imgs/code.jpg" alt=""></div>
-            <input type="submit" value="登录" class="submit">
-        </form>
+                <input id="teacherPassword" type="password" name="password" placeholder="密码" value=""><br>
+                <div class="v-code">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <input type="text" placeholder="验证码">
+                    <img src="../imgs/code.jpg" alt="">
+                </div>
+                <input type="submit" value="登录" class="submit">
+            </form>
 
-        <div class="verify">
-            <span class="signin"><a href="http://127.0.0.1:8080/OnlineExam/home/login" target="_blank">考试系统</a></span>
-            <span class="forget"><a href="http://127.0.0.1:8080/wjjshopweb/index.jsp" target="_blank">资源商城平台</a></span>
+            <!-- 管理员登录表单 -->
+            <form id="adminLoginForm" class="admin">
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <input id="adminUsername" type="text" name="username" placeholder="管理员账号" value=""><br>
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <input id="adminPassword" type="password" name="password" placeholder="密码" value=""><br>
+                <div class="v-code">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <input type="text" placeholder="验证码">
+                    <img src="../imgs/code.jpg" alt="">
+                </div>
+                <input type="submit" value="登录" class="submit">
+            </form>
+
+            <div class="verify">
+                <span class="signin"><a href="#" target="_blank">注册新用户</a></span>
+                <span class="forget"><a href="#" target="_blank">忘记密码</a></span>
+            </div>
+
+            <div class="privacy-policy">
+                登录即表示同意平台《隐私政策》和《用户协议》
+            </div>
+
         </div>
 
-        <div class="privacy-policy">
-            登录即表示同意平台《隐私政策》和《用户协议》
+
+        <!-- 右半部分 -->
+        <div class="right">
+            <div class="qr-code">
+                <img src="../imgs/qr.png" alt="">
+                <h4 class="h4">使用微信扫一扫登录微信小程序</h4>
+            </div>
         </div>
-
-    </div>
-
-
-    <!-- 右半部分 -->
-    <div class="right">
-        <div class="qr-code">
-            <img src="../imgs/qr.png" alt="">
-            <h4 class="h4">使用微信扫一扫登录微信小程序</h4>
-        </div>
-    </div>
-</main>
+    </main>
 
 </body>
 
